@@ -27,44 +27,43 @@
 //   alert('節約しましょう。')
 // }
 
-// janken
-const GU    = 1;
-const CHOKI = 2;
-const PA    = 3;
+// // janken
+// const GU    = 1;
+// const CHOKI = 2;
+// const PA    = 3;
 
-let hum = prompt('1〜3の数値を入力してください。\n\n' + GU + ':グー\n' + CHOKI + ':チョキ\n' + PA + ':パー\n');
-hum = parseInt(hum, 10);
+// let hum = prompt('1〜3の数値を入力してください。\n\n' + GU + ':グー\n' + CHOKI + ':チョキ\n' + PA + ':パー\n');
+// hum = parseInt(hum, 10);
 
-if (hum != GU && hum != CHOKI && hum != PA){
-  alert('入力値を上手く認識できませんでした。\nブラウザを再読み込みすると、もう一度挑戦できます。');
-} else {
-  let com = Math.floor(Math.random() * 3) + 1;
+// if (hum != GU && hum != CHOKI && hum != PA){
+//   alert('入力値を上手く認識できませんでした。\nブラウザを再読み込みすると、もう一度挑戦できます。');
+// } else {
+//   let com = Math.floor(Math.random() * 3) + 1;
 
-  let comHandName = '';
-  switch (com) {
-    case GU:
-      comHandName = 'グー'
-      break;
+//   let comHandName = '';
+//   switch (com) {
+//     case GU:
+//       comHandName = 'グー'
+//       break;
 
-    case CHOKI:
-      comHandName = 'チョキ'
-      break;
+//     case CHOKI:
+//       comHandName = 'チョキ'
+//       break;
 
-    case PA:
-      comHandName = 'パー'
-      break;
-  }
+//     case PA:
+//       comHandName = 'パー'
+//       break;
+//   }
 
-  let msgResult = '';
-  if(hum === com) {
-    msgResult = '結果はあいこでした。'
-  } else if((com === GU && hum === PA) || (com === CHOKI && hum === GU) || (com === PA && hum === CHOKI) ) {
-    msgResult = '勝ちました。'
-  } else {
-    msgResult = '負けました。'
-  }
+//   let msgResult = '';
+//   if(hum === com) {
+//     msgResult = '結果はあいこでした。'
+//   } else if((com === GU && hum === PA) || (com === CHOKI && hum === GU) || (com === PA && hum === CHOKI) ) {
+//     msgResult = '勝ちました。'
+//   } else {
+//     msgResult = '負けました。'
+//   }
   
-  alert(msgResult + '対戦相手は「' + comHandName + '」を出しました。')
+//   alert(msgResult + '対戦相手は「' + comHandName + '」を出しました。')
 
-}
-
+// }
