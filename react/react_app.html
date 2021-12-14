@@ -21,13 +21,13 @@
     <script type="text/babel">
     let dom = document.querySelector('#root')
 
-    let title = "新タイトル"
     let message = "新しいメッセージです。"
+    let link = "http://google.com"
 
     let el = (
       <div className="alert alert-primary">
-        <h3>{title}</h3>
-        <p>{message}</p>
+        <h4>{message}</h4>
+        <h5><a href={link}>this is link!</a></h5>
       </div>
     )
 
