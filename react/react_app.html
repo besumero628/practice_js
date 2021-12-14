@@ -21,13 +21,19 @@
     <script type="text/babel">
     let dom = document.querySelector('#root')
 
+    let title ="新タイトル"
     let message = "新しいメッセージです。"
-    let link = "http://google.com"
+
+    const msg_s = {
+      fontSize:"20pt",
+      color:"red",
+      border:"1px solid blue"
+    }
 
     let el = (
       <div className="alert alert-primary">
-        <h4>{message}</h4>
-        <h5><a href={link}>this is link!</a></h5>
+        <h4>{title}</h4>
+        <h5 style={msg_s}>{message}</h5>
       </div>
     )
 
