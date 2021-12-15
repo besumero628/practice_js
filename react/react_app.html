@@ -23,17 +23,22 @@
 
     let title ="React page."
     let message = "メッセージを表示します。"
-    let content = '※これが、trueの時に表示されるメッセージです。'
+    let content_true = '※これが、trueの時に表示されるメッセージです。'
+    let content_false = '※これは、falseの時の表示です。'
 
-    let flg = true;
+    let flg = false;
 
     let el = (
       <div>
         <h4>{title}</h4>
         <h6>{message}</h6>
-      {flg &&
+      {flg ?
         <div className="alert alert-primary mt-3">
-          <p>{content}</p>
+          <p>{content_true}</p>
+        </div>
+      :
+        <div className="alert alert-secondary mt-3">
+          <p>{content_false}</p>
         </div>
       }
       </div>
