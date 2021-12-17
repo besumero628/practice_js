@@ -23,17 +23,22 @@
 
     let message = "React component page."
 
-    function Welcome(props) {
-      return <div className={props.alert}>
-        <p className={props.fontSize}>Hello {props.name}!!</p>
-      </div>
+    class Hello extends React.Component {
+      constructor(props) {
+        super(props)
+      }
+
+      render(){
+        return <div className="alert alert-primary">
+          <p className="h4">Hello!!</p>
+        </div>
+      }
     }
 
     let el = (
       <div>
         <h5 className="mb-4">{message}</h5>
-        <Welcome name="Taro" fontSize="h2" alert="alert alert-primary" />
-        <Welcome name="Hanako" fontSize="h5" alert="alert alert-dark" />
+        <Hello />
       </div>
     )
 
